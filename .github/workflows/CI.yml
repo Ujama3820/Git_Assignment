@@ -24,13 +24,13 @@ jobs:
               run: npm install 
 
             - name: Start Server 
-              run:  npm start &
+              run:  npm start 
 
             - name: Wait for Server to Start
               run: sleep 20
 
             - name: check connectivity
-              run: curl -l http:localhost:5000
+              run: curl -Is http://localhost:5000
             
             - name: stop server
               run : npm stop

@@ -23,11 +23,8 @@ jobs:
             - name: install dependencies
               run: npm install 
 
-            - name: Set execute permission
-              run: chmod +x index.js
-
             - name: Start Server 
-              run:  node index.js &
+              run:  npm start &
 
             - name: Wait for Server to Start
               run: sleep 20

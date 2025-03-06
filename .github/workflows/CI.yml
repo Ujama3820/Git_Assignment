@@ -32,3 +32,5 @@ jobs:
 
             - name: Check if Server is Running
               run: curl -I http://localhost:5000 || cat server.log
+
+              

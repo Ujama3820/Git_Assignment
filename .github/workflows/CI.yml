@@ -3,10 +3,10 @@ name: Node JS CI/CD Pipeline
 on:
     push:
         branches:
-            - main
+            - master
     pull_request:
         branches:
-            - main
+            - master
 jobs:
     build_node_js:
         runs-on: ubuntu-latest

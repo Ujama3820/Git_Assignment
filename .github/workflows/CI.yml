@@ -23,8 +23,5 @@ jobs:
             - name: install dependencies
               run: npm install 
 
-            - name: Build application
-              run: node index.js
-
             - name: start application
-              run: npm start
+              start: node index.js

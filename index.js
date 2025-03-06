@@ -1,7 +1,7 @@
 
 const express= require('express');
 
-const index= express();
+const server= express();
 
 server.get('/',(req,res)=>{
     res.send("Welcome to My Application")

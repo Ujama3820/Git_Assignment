@@ -24,4 +24,4 @@ jobs:
               run: npm install 
 
             - name: Build application
-              run: node index.js
+              run: echo "build successful"

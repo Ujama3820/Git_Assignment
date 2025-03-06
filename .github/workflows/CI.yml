@@ -18,10 +18,12 @@ jobs:
             - name: setup node env
               uses: actions/setup-node@v3
               with:
-                node-version: latest
+                node-version: 18
 
             - name: install dependencies
               run: npm install 
 
-            - name: build application
-              run: node index.js 
+            - name: Start Server in Background
+              run: |
+                nohup node index.js > server.log 2>&1 &
+

@@ -13,4 +13,4 @@ server.get('/users',(req,res)=>{
     res.send([{id:1,name:"Uzma"},{id:2,name:"Uzma"},{id:3,name:"Uzma"}])
 })
 
-server.listen(PORT,'127.0.0.1', () => {console.log("Server Started")})
+server.listen(PORT,'0.0.0.0', () => {console.log("Server Started")})

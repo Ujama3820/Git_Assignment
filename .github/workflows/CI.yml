@@ -1,0 +1,27 @@
+name: Node JS CI/CD Pipeline
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+jobs:
+    build_node_js:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v4
+            
+            - name: setup node env
+              uses: actions/setup-node@v3
+              with:
+                node-version: '20'
+
+            - name: install dependencies
+              run: npm install
+
+            - name: Build application
+              run: node server.js

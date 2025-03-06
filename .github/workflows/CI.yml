@@ -27,5 +27,8 @@ jobs:
               run: |
                 nohup node index.js > server.log 2>&1 &
 
+            - name: Wait for Server to Start
+              run: sleep 10
+
             - name: Check if Server is Running
               run: curl -I http://localhost:5000 || cat server.log

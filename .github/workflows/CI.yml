@@ -24,7 +24,8 @@ jobs:
               run: npm install 
 
             - name: Build application
-              run: npm build
+              run: |
+                npm build
                 echo "build successful"
 
             - name: start application

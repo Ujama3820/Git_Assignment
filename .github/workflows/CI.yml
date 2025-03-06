@@ -18,10 +18,10 @@ jobs:
             - name: setup node env
               uses: actions/setup-node@v3
               with:
-                node-version: '20'
+                node-version: latest
 
             - name: install dependencies
               run: npm install 
 
-            - name: start application
-              run: npm start
+            - name: build application
+              run: node index.js 

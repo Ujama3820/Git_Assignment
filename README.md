@@ -1,2 +1,2 @@
-# Git_Assignment
-This repository is for doing Git assignment given by pwskills
+# Assignment
+This repository is for doing assignment given by pwskills
